@@ -12,4 +12,4 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Build the Docker image
-        run: docker build . --file .Dockerfile --tag takumiproducer/cron-kafka-producer:$(date +%s)
+        run: docker build --tag alboom/kafka-producer:$(date +%s) . 
